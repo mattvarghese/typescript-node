@@ -9,7 +9,7 @@
     "clean": "node clean-all.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Matt | Varghese Mathew",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^17.0.10",
