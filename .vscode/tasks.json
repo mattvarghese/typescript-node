@@ -14,21 +14,21 @@
 			"group": "build",
 			"problemMatcher": [],
 			"label": "npm: build",
-			"detail": "npm install && npx --package typescript tsc"
+			"detail": "npm run build"
 		},
 		{
 			"type": "npm",
 			"script": "start",
 			"problemMatcher": [],
 			"label": "npm: start",
-			"detail": "node build/index.js"
+			"detail": "npm run start"
 		},
 		{
 			"type": "npm",
 			"script": "clean",
 			"problemMatcher": [],
 			"label": "npm: clean",
-			"detail": "node clean-all.js"
+			"detail": "npm run clean"
 		}
 	]
 }
