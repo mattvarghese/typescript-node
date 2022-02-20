@@ -4,16 +4,20 @@
 // Blog: https://mattvarghese-cs.blogspot.com/2022/01/minimal-typescript-react-project.html
 // GitHub: https://github.com/mattvarghese/minimal-typescript-react-template
 
-var console = require('console');
-var exec = require('child_process').exec;
-var os = require('os');
+import { exec } from 'child_process';
+import * as os from 'os';
 
-function puts(error, stdout, stderr) { console.log(stdout) }
+function puts(_error, stdout, _stderr) {
+    console.log(stdout)
+}
 
 // Run command depending on the OS
-if (os.type() === 'Linux') 
-   exec("rm -rf build node_modules", puts);
+if (os.type() === 'Linux') {
+    exec("rm -rf build node_modules", puts);
+    exec("rm clean-all.js", puts);
+}
 else {
     exec("rmdir /s /q node_modules", puts);
     exec("rmdir /s /q build", puts);
+    exec("del clean-all.js", puts);
 }

@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm install && npx --package typescript tsc",
     "start": "npm run build && node build/index.js",
-    "clean": "node clean-all.js"
+    "clean": "npx --package typescript tsc clean-all.ts && node clean-all.js"
   },
   "keywords": [],
   "author": "Matt | Varghese Mathew",
