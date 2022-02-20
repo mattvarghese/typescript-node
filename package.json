@@ -6,11 +6,10 @@
   "scripts": {
     "build": "npm install && npx --package typescript tsc",
     "start": "npm run build && node build/index.js",
-    "clean": "npm install && npx --package typescript tsc clean-all.ts && node clean-all.js"
+    "clean": "npm install -D typescript && npx --package typescript tsc clean-all.ts && node clean-all.js"
   },
-  "keywords": [],
   "author": "Matt | Varghese Mathew",
-  "license": "ISC",
+  "license": "GPL v3",
   "devDependencies": {
     "@types/node": "^17.0.10",
     "typescript": "^4.5.5"

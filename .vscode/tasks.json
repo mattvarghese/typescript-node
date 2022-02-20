@@ -1,3 +1,7 @@
+// Copyright (C) 2022 Varghese Mathew (Matt)
+// Distributed under GNU GENERAL PUBLIC LICENSE Version 3
+// See ~/LICENSE for details
+// GitHub: https://github.com/mattvarghese/typescript-node
 {
 	"version": "2.0.0",
 	"tasks": [
@@ -6,7 +10,10 @@
 			"script": "install",
 			"problemMatcher": [],
 			"label": "npm: install",
-			"detail": "install dependencies from package"
+			"detail": "install dependencies from package",
+			"presentation": {
+				"close": true
+			}
 		},
 		{
 			"type": "npm",
@@ -14,21 +21,30 @@
 			"group": "build",
 			"problemMatcher": [],
 			"label": "npm: build",
-			"detail": "npm run build"
+			"detail": "npm run build",
+			"presentation": {
+				"close": true
+			}
 		},
 		{
 			"type": "npm",
 			"script": "start",
 			"problemMatcher": [],
 			"label": "npm: start",
-			"detail": "npm run start"
+			"detail": "npm run start",
+			"presentation": {
+				"close": true
+			}
 		},
 		{
 			"type": "npm",
 			"script": "clean",
 			"problemMatcher": [],
 			"label": "npm: clean",
-			"detail": "npm run clean"
+			"detail": "npm run clean",
+			"presentation": {
+				"close": true
+			}
 		}
 	]
 }
